@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta content="width=device-width,user-scalable=no" name="viewport">
+	<title>注册</title>
+    <link rel="stylesheet" href="../static/stylesign.css" type="text/css" />
+</head>
+<body>
+	   <div class="content">
+           <br><br>
+           <form action="/SIGN" method="post" class="login-form">
+                <div class="username">
+                   <input type="string" name="name" required="required"placeholder="填写注册用户名" autocomplete="on" />
+                   <span class="user-icon icon">☺</span>
+                </div>
+                <div class="password">
+                   <input type="password" name="password1" required="required" placeholder="设置密码" />
+                   <span class="password-icon icon">☺</span>
+                </div>
+                <div class="password">
+                   <input type="password" name="password2" required="required" placeholder="重复输入密码" />
+                   <span class="password-icon icon">☺</span>
+                </div>   
+                <div class="password">
+                   <input type="password" name="youth_key" required="required" placeholder="输入有思密匙" /><p>{{state}}</p>
+                   <span class="password-icon icon">☺</span>
+               </div>              
+               <div class="account-control">
+                   <button type="submit">注册</button>
+               </div>
+           </form>
+	   </div>
+</div>
+</body>
+</html>

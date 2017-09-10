@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta content="width=device-width,user-scalable=no" name="viewport">
+	<title>YOUTH KEY·录入</title>
+    <link rel="stylesheet" href="../static/task.css" type="text/css" />
+</head>
+<body>
+	   <div class="content">
+           <br><br>
+           <form action="/input" method="POST" class="login-form">
+                <div class="username">
+                   <input type="string" name="name" required="required"placeholder="填写姓名" autocomplete="on" />
+                   <span class="user-icon icon">☺</span>
+                </div>
+                <div class="username">
+                   <input type="text" name="phone" required="required"placeholder="手机号码" autocomplete="on" />
+                   <span class="user-icon icon">☺</span>
+                </div>
+                <div class="username" style="text-align:left">
+                    <select class="form-control" name="department" id="select" required="required" style="background: #444444 0px 0px; color: #ffffff; font-size: 14px; border: #000000 1px solid; padding: 5px;">
+                            <option >*部门信息*</option>
+                            <option >创意工厂</option>
+                            <option >实验室</option>
+                            <option >交互</option>
+                            <option >沙龙</option>
+                            <option >手机报</option>
+                    </select>
+                </div>
+                <div class="username" style="text-align:left">
+                    <select class="form-control" name="post" id="select" required="required" style="background: #444444 0px 0px; color: #ffffff; font-size: 14px; border: #000000 1px solid; padding: 5px;">                             
+                        <option >*职务信息*</option>    
+                            <option >理事</option>
+                            <option >资深</option>
+                            <option >干事</option>
+                    </select>  
+                </div>
+                <div class="username" style="text-align:left">
+                    <select class="form-control" name="class" id="select" required="required" style="background: #444444 0px 0px; color: #ffffff; font-size: 14px; border: #000000 1px solid; padding: 5px;"> 
+                            <option >*年级信息*</option>    
+                            <option >大一</option>
+                            <option >大二</option>
+                            <option >大三</option>
+                            <option >大四</option> 
+                    </select>
+
+                </div>
+                         
+                <div class="account-control">{{state}} 
+                   <button type="submit">录入</button>
+                </div>
+           </form>
+	   </div>
+</div>
+</body>
+</html>

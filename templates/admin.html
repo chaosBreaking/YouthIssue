@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>管理员登录</title>
+    <link rel="stylesheet" href="../static/style.css" type="text/css" /> 
+    <meta content="width=device-width,user-scalable=no" name="viewport">
+</head>
+<body>
+    <div class="content">
+           <br><br>
+           <form action="/adminlogin" method="post" class="login-form">
+               <div class="username">
+                   <input type="text" name="name" required="required"placeholder="用户名" autocomplete="on" />
+                   <span class="user-icon icon">☆</span>
+               </div>
+               <div class="password">
+                   <input type="password" name="password" required="required" placeholder="密码" /><p>{{fail}}</p>
+                   <span class="password-icon icon">☆</span>
+               </div>
+               <div class="account-control">
+                   <button type="submit">登录</button>
+               </div>
+           </form>
+	   </div>
+</div>
+</body>
+</html>
